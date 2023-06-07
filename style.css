@@ -1,0 +1,30 @@
+#gridContainer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  border: 2px solid;
+  width: 500px;
+  height: 500px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .gridsquare { */
+/*   width: 10px; */
+/*   height: 10px; */
+/* } */
+
+.painted {
+  background-color: black;
+}
+
+.blank {
+  background-color: white;
+}
+
+.hovered {
+  background-color: gray;
+}
