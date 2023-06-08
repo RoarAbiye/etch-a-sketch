@@ -4,7 +4,12 @@ const clearButton = document.querySelector('.clearButton');
 const drawingModeElement = document.getElementsByName('drawingMode');
 
 const setGridSize = () => {
-  const customeGridSize = prompt();
+  let customeGridSize = prompt(
+    'Enter the grid size you want, please note that the grid size cannot be larger than 100 and less than 1'
+  );
+  if (customeGridSize > 100) customeGridSize = 100;
+  if (customeGridSize < 1) customeGridSize = 1;
+
   gridContainer.innerHTML = '';
   gridContainer.appendChild(gridGenerator(customeGridSize));
   refreshEventListner('regular');
